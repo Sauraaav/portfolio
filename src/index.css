@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes expand-large-screen {
+  0% {
+    padding: 0 0;
+    opacity: 0;
+  }
+
+  50%{
+    opacity: .5;
+  }
+
+  100% {
+    padding: 2.5% 5%;
+    opacity: 1;
+  }
+}
+
+.expand-large-screen{
+  animation: expand-large-screen 1s ease-in-out forwards;
+}
+
+@keyframes expand-small-screen {
+  0% {
+    padding: 0 0;
+    opacity: 0;
+  }
+
+  50%{
+    opacity: .5;
+  }
+
+  100% {
+    padding: 2.5%;
+    opacity: 1;
+  }
+}
+
+.expand-small-screen{
+  animation: expand-small-screen 1s ease-in-out forwards;
+}
+
+@keyframes makevisible {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.make-visible{
+  animation: makevisible 6s ease forwards;
+}
